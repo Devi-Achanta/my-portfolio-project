@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Representation</title>
+    <style>
+        body {
+            background-color: #2b2b2b; /* Dark background color */
+            font-family: Arial, sans-serif;
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ffcc00; /* Yellow heading */
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill {
+            background-color: #333; /* Card background color */
+            border: 2px solid #ffcc00; /* Yellow border */
+            border-radius: 15px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .skill:hover {
+            transform: translateY(-10px); /* Hover animation */
+            background-color: #ffcc00; /* Yellow on hover */
+            color: #333; /* Dark text on hover */
+        }
+        .skill p {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        .skills-container:hover .skill {
+            animation: bounce 1s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+        <div class="skill">
+            <div>Java</div>
+            <p>Strong OOP concepts and project experience.</p>
+        </div>
+        <div class="skill">
+            <div>HTML</div>
+            <p>Proficient in building web pages using semantic HTML.</p>
+        </div>
+        <div class="skill">
+            <div>CSS</div>
+            <p>Experienced with responsive design and animations.</p>
+        </div>
+        <div class="skill">
+            <div>JavaScript</div>
+            <p>Dynamic web functionality using ES6 and beyond.</p>
+        </div>
+        <div class="skill">
+            <div>MySQL</div>
+            <p>Hands-on with database design and complex queries.</p>
+        </div>
+    </div>
+
+</body>
+</html>

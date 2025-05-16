@@ -1,0 +1,56 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.project img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+}
+
+.project-info p {
+    margin: 0 0 10px;
+}
+
+.project-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
